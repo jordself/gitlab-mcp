@@ -1,0 +1,9 @@
+default:
+  tags:
+    - general_ubuntu_runner
+    - test
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Security/Dependency-Scanning.gitlab-ci.yml
+  - template: Security/Secret-Detection.gitlab-ci.yml
